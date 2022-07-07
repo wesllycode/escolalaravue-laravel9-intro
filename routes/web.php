@@ -17,3 +17,8 @@ Route::get('/users/{naoprecisanomeserigual}', function ($id) {
     return $id;
 });
 
+
+
+Route::get('/users/{paramA}/{paramB}', function ($paramA, $paramB) {
+    return $paramA . ' - '. $paramB;
+});
