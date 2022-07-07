@@ -22,3 +22,7 @@ Route::get('/users/{naoprecisanomeserigual}', function ($id) {
 Route::get('/users/{paramA}/{paramB}', function ($paramA, $paramB) {
     return $paramA . ' - '. $paramB;
 });
+
+Route::get('/empresa/{string?}', function ($string = null) {
+    return $string;
+});
