@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return 'oi';
+Route::get('/users/{id}', function ($id) {
+    return $id;
 });
 
