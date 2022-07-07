@@ -31,13 +31,13 @@ Route::prefix('usuarios')->group(function() {
 
     Route::get('/', function() {
         return 'Listar Todos os Usuários';
-    });
+    })->name('usuarios');
 
     Route::get('/{id}', function ($id) {
         return 'Visualizar os detalhe do usuário do ID->'.$id;
-    });
+    })->name('usuarios.show');
 
     Route::get('/edit/{id}', function ($id){
         return 'Editar Usuário do ID -> '.$id;
-    });
+    })->name('usuarios.tags');
 });
