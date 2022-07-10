@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,9 +19,9 @@ Route::get('/response', function (\Illuminate\Http\Request $request){
     dd($request);
 });
 
-Route::get('/user/',[\App\Http\Controllers\UserController::class,'show']);
+Route::get('/user/',[UserController::class,'show']);
 
-Route::get('/user/{id}',[\App\Http\Controllers\UserController::class,'showId']);
+Route::get('/user/{id}',[UserController::class,'showId']);
 
 
 
