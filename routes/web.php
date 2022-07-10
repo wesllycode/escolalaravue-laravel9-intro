@@ -54,3 +54,4 @@ Route::prefix('usuarios')->group(function() {
 });
 */
 
+Route::get('/user',[Usercontroller::class,'index']);
