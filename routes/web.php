@@ -18,10 +18,8 @@ Route::get('/response', function (\Illuminate\Http\Request $request){
     dd($request);
 });
 
-Route::get('/users/{naoprecisanomeserigual}', function ($id) {
-    return $id;
-});
-
+Route::get('/user/',[\App\Http\Controllers\UserController::class,'show']);
+g
 
 Route::get('/users/{paramA}/{paramB}', function ($paramA, $paramB) {
     return $paramA . ' - '. $paramB;
