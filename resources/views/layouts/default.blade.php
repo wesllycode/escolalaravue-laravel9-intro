@@ -8,6 +8,9 @@
     <title>Meu Layout</title>
 </head>
 <body>
+<h1>Meu Layout</h1>
+
+@yield('content')
 
 </body>
 </html>
