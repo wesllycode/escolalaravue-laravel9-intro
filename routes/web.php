@@ -23,6 +23,8 @@ Route::get('/user/',[UserController::class,'show']);
 
 Route::get('/user/{id}',[UserController::class,'showId']);
 
+Route::get('/user/request/{id}',[UserController::class,'showRequest']);
+
 
 
 Route::get('/users/{paramA}/{paramB}', function ($paramA, $paramB) {

@@ -13,4 +13,9 @@ class UserController extends Controller
     public function showId($id){
         return 'O id do usuário é -> '. $id;
     }
+
+    public function showRequest(Request $request){
+       dd($request->server(), $request->server('REQUEST_URI'), );
+
+    }
 }
