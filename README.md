@@ -53,3 +53,6 @@ Falando sobre as diretivas do Laravel, [documentation laravel 9](https://laravel
 Falando criação de templates e como implementar no laravel usando @yield, @section e @endsection
 
 ### Aula 10
+
+Falo sobre @stack para adicionar JS e CSS e @push para colocar nos blades.
+Falou sobre repende que colocar o script como primeiro.
