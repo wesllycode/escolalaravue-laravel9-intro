@@ -31,6 +31,7 @@ eu já sei qual a aula que vai falar sobre o tema.
 
 ### Aula 05
 Criou rotas com grupos  e mostrou como acessar request com query->(')
+Link da [Aula 05](https://www.youtube.com/watch?v=cAyzFcB_8Jw&list=PLcoYAcR89n-reidRFA3XCIvQPeKFt4dQU&index=5)
 
 
 ### Aula 06
