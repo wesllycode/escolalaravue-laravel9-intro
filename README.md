@@ -46,3 +46,10 @@ usando o model e acessando na view de forma bem resumida no inicio.
 Link da [Aula 07](https://www.youtube.com/watch?v=Dpgv2RylSB4&list=PLcoYAcR89n-reidRFA3XCIvQPeKFt4dQU&index=7)
 
 ### Aula 08
+
+Falando sobre as diretivas do Laravel, [documentation laravel 9](https://laravel.com/docs/9.x/blade#blade-directives)
+
+### Aula 09 
+Falando criação de templates e como implementar no laravel usando @yield, @section e @endsection
+
+### Aula 10
