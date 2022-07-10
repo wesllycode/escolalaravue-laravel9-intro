@@ -19,7 +19,10 @@ Route::get('/response', function (\Illuminate\Http\Request $request){
 });
 
 Route::get('/user/',[\App\Http\Controllers\UserController::class,'show']);
-g
+
+Route::get('/user/{id}',[\App\Http\Controllers\UserController::class,'showId']);
+
+
 
 Route::get('/users/{paramA}/{paramB}', function ($paramA, $paramB) {
     return $paramA . ' - '. $paramB;
