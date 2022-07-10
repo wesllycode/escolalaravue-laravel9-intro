@@ -15,6 +15,8 @@ use App\Http\Controllers\UserController;
 */
 
 
+/*
+
 Route::get('/response', function (\Illuminate\Http\Request $request){
     dd($request);
 });
@@ -50,3 +52,5 @@ Route::prefix('usuarios')->group(function() {
         return 'Editar Usuário do ID -> '.$id;
     })->name('usuarios.tags');
 });
+*/
+

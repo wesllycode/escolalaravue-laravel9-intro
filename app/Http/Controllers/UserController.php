@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
+    /*
     public function show(){
         return 'x';
     }
@@ -18,4 +19,5 @@ class UserController extends Controller
        dd($request->server(), $request->server('REQUEST_URI'), );
 
     }
+    */
 }
