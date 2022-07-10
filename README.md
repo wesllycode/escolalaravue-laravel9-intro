@@ -28,6 +28,11 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 Vou colocar o resumo de algumas aulas como ponto de chave, para quando eu tiver dúvidas
 eu já sei qual a aula que vai falar sobre o tema.
 
+
+### Aula 05
+Criou rotas com grupos  e mostrou como acessar request com query->(')
+
+
 ### Aula 06
 Falou sobre os controllers e rotas e porque colocar os names nas rotas.
 
