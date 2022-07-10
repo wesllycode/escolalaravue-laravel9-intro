@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::get('/response', function (\Illuminate\Http\Request $request){
+    dd($request);
+});
+
 Route::get('/users/{naoprecisanomeserigual}', function ($id) {
     return $id;
 });
