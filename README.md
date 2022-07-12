@@ -71,3 +71,12 @@ Falou sobre constrained() não é obrigatório, mas é bom usar, ele serve para 
 dos daquela tabela.
 
 [Link da Aula 12](https://www.youtube.com/watch?v=GsMNL4P9YI4&list=PLcoYAcR89n-reidRFA3XCIvQPeKFt4dQU&index=12)
+
+
+### Aula 13
+Vamos falar sobre models.
+
+Mostrando como criar model via comando usando php artisan. E possivel criar model, controller e factory
+tudo de uma vez com uma linha de comando.
+
+[Link da Aula 13](https://www.youtube.com/watch?v=8pcFJ4-iTBQ)
