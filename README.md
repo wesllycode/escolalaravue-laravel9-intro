@@ -50,9 +50,24 @@ Link da [Aula 07](https://www.youtube.com/watch?v=Dpgv2RylSB4&list=PLcoYAcR89n-r
 Falando sobre as diretivas do Laravel, [documentation laravel 9](https://laravel.com/docs/9.x/blade#blade-directives)
 
 ### Aula 09 
-Falando criação de templates e como implementar no laravel usando @yield, @section e @endsection
+Falando criação de templates e como implementar no laravel usando @yield, @section e @endsection.
+[Link da Aula 09](https://www.youtube.com/watch?v=meaRFfy5cdI&list=PLcoYAcR89n-reidRFA3XCIvQPeKFt4dQU&index=9)
+
 
 ### Aula 10
+Falo sobre @stack para adicionar JS e CSS e @push para colocar nos blades. Falou sobre repende que colocar o script como primeiro.
+[Link da Aula 10](https://www.youtube.com/watch?v=8M5JuB6Qgx0&list=PLcoYAcR89n-reidRFA3XCIvQPeKFt4dQU&index=10)
 
-Falo sobre @stack para adicionar JS e CSS e @push para colocar nos blades.
-Falou sobre repende que colocar o script como primeiro.
+### Aula 11
+A aula é falando sobre Laravel Mix, explicou em vez de asset usar o mix(), contudo, quando foi feito essa explicação, foi antes de sair atualização
+do laravel que por padrão vai usar o Vite. [Link da Aula 11](https://www.youtube.com/watch?v=j9p7jlPFvk0&list=PLcoYAcR89n-reidRFA3XCIvQPeKFt4dQU&index=11)
+
+### Aula 12
+Falando sobre as migrations, explicou como criar uma tabela e fazer migration, como também adicionar uma nova coluna
+ou excluir depois que a tabela está em produção com uso do add_nome_da_coluna_create_posts_table nome da migration que 
+eu criei anterioramente create_posts_table. Falou sobre rollback --step=2 quer dizer vai voltar duas casas.
+
+Falou sobre constrained() não é obrigatório, mas é bom usar, ele serve para dizer, que vai usar apenas os ID
+dos daquela tabela.
+
+[Link da Aula 12](https://www.youtube.com/watch?v=GsMNL4P9YI4&list=PLcoYAcR89n-reidRFA3XCIvQPeKFt4dQU&index=12)
