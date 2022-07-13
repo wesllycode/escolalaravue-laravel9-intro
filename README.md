@@ -79,4 +79,9 @@ Vamos falar sobre models.
 Mostrando como criar model via comando usando php artisan. E possivel criar model, controller e factory
 tudo de uma vez com uma linha de comando.
 
-[Link da Aula 13](https://www.youtube.com/watch?v=8pcFJ4-iTBQ)
+[Link da Aula 13](https://www.youtube.com/watch?v=8pcFJ4-iTBQ)"f
+
+### Aula 14
+Vamos falar sobre Seeders e Factories
+
+[LInk da Aula 14](https://www.youtube.com/watch?v=MZ7mNIft1XQ)
