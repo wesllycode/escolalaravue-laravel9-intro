@@ -9,13 +9,6 @@ use MercadoPago;
 class PaymentController extends Controller
 {
  
-   
-    
-	public function pagamento() {
-		return 'controller pagamento';
-	}
-	
-	
 	public function index() {
 
         \MercadoPago\SDK::setAccessToken(""); // Either Production or SandBox AccessToken
