@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PaymentController;
 
 
 /*
@@ -21,7 +22,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::prefix('mp')->group(function() {
-    Route::get('/payment', function (){
-        return 'pagamento';
-    });
+    Route::get('/payment',[PaymentController::class,'pagamento']);
 });
