@@ -18,3 +18,10 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::prefix('mp')->group(function() {
+    Route::get('/payment', function (){
+        return 'pagamento';
+    });
+});
