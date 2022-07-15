@@ -19,16 +19,16 @@ class PaymentController extends Controller
         $payment->description = "Plano 24 horas";
         $payment->payment_method_id = "pix";
         $payment->payer = array(
-            "email" => "seu@email.com",
-            "first_name" => "Seu",
-            "last_name" => "Nome",
+            "email" => "test_user_75171799@testuser.com",
+            "first_name" => "Test",
+            "last_name" => "Test",
             "identification" => array(
                 "type" => "CPF",
-                "number" => "19119119100"
+                "number" => "11111111111"
             )
         );
-        dd($payment);
-        /*if ($payment->save()) {
+
+        if ($payment->save()) {
             $dados = [
                 'qr_code_base64' => $payment->point_of_interaction->transaction_data->qr_code_base64,
                 'qr_code' => $payment->point_of_interaction->transaction_data->qr_code,
@@ -39,8 +39,6 @@ class PaymentController extends Controller
             ];
             return response()->json([$dados]);
         }
-        */
-
 
     }
 
