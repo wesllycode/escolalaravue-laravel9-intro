@@ -24,6 +24,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::prefix('mp')->group(function() {
     Route::get('/payment',[PaymentController::class,'index']);
     Route::post('/frontend',[PaymentController::class,'receberdados']);
-
+    Route::post('/statuspayment',[PaymentController::class,'status']);
 });
 

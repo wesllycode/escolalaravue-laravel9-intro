@@ -42,13 +42,20 @@ class PaymentController extends Controller
 
     }
 
-    public function statuspayments($id) {
+    public function status(Request $request) {
+        \MercadoPago\SDK::setAccessToken(config('services.mercadopago.token'));
+         $payment = new MercadoPago\Payment();
 
-        \MercadoPago\SDk::setAccessToken('');
+         $id = $request->input('id');
 
-            $payment = new MercadoPago\Payment();
-            return response()->json([$payment->get($id)->status]);
+         return response()->json([$payment->get($id)->status]);
 
     }
+
+    public function receberdados(Request $request) {
+        dd($request);
+    }
+
+
 
 }
