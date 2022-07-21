@@ -34,12 +34,12 @@ class PaymentController extends Controller
                 'qr_code' => $payment->point_of_interaction->transaction_data->qr_code,
                 'payment_id' => $payment->id,
                 'valor' => '10',
-                'produto' => 'Plano 24 horas'
+                'produto' => 'Plano 24 horas',
+
 
             ];
             return response()->json([$dados]);
         }
-
     }
 
     public function status(Request $request) {
@@ -53,9 +53,44 @@ class PaymentController extends Controller
     }
 
     public function receberdados(Request $request) {
-        dd($request);
+        return $request;
     }
 
+    public function preference()
+    {
+        \MercadoPago\SDK::setAccessToken(config('services.mercadopago.token')); // Either Production or SandBox AccessToken
+
+        // Cria a preferência
+        $preference = new MercadoPago\Preference();
+
+        // Cria um item
+        $item = new MercadoPago\Item();
+        $item->title = '24 horas de internet';
+        $item->description = 'Acesso por 24 horas de internet';
+        $item->quantity = 1;
+        $item->currency_id = 'BRL';
+        $item->unit_price = 20.00;
+
+        // Criando os itens na preferência
+        $preference->items = array($item);
+
+        // Criando e selecionando o metodo de pagamento
+        $preference->payment_methods = array(
+            "default_payment_method_id" => "pix",
+            "excluded_payment_types" => array(
+                array("id" => "ticket")
+            ),
+            "installments" => 12
+        );
 
 
+        if ( $preference->save()) {
+            $dados = [
+                'preference_id' => $preference->id,
+                'exibir' => $preference->payment_methods,
+                'exibir2' => $preference->items,
+            ];
+            return response()->json([$dados]);
+        }
+    }
 }

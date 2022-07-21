@@ -25,5 +25,6 @@ Route::prefix('mp')->group(function() {
     Route::get('/payment',[PaymentController::class,'index']);
     Route::post('/frontend',[PaymentController::class,'receberdados']);
     Route::post('/statuspayment',[PaymentController::class,'status']);
+    Route::post('/preference',[PaymentController::class,'preference']);
 });
 
