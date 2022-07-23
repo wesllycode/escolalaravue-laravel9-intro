@@ -9,7 +9,7 @@ use MercadoPago;
 class PaymentController extends Controller
 {
 
-	public function index() {
+	public function qrcode() {
 
         \MercadoPago\SDK::setAccessToken(config('services.mercadopago.token')); // Either Production or SandBox AccessToken
 
@@ -70,6 +70,7 @@ class PaymentController extends Controller
         $item->quantity = 1;
         $item->currency_id = 'BRL';
         $item->unit_price = 20.00;
+        $item->auto_return = "http://localhost:3000/sucessnetwork";
 
         // Criando os itens na preferência
         $preference->items = array($item);
